@@ -1,0 +1,97 @@
+{
+  "nextEntryId": 17,
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Main blocks",
+      "type": "tileSet"
+    },
+    {
+      "id": "8",
+      "name": "Levels",
+      "type": null,
+      "children": [
+        {
+          "id": "0",
+          "name": "Level 1",
+          "type": "scene"
+        },
+        {
+          "id": "2",
+          "name": "Level 1 Map",
+          "type": "tileMap"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Player",
+      "type": null,
+      "children": [
+        {
+          "id": "5",
+          "name": "Sprite",
+          "type": "sprite"
+        },
+        {
+          "id": "6",
+          "name": "Player",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Scripts",
+      "type": null,
+      "children": [
+        {
+          "id": "7",
+          "name": "CameraFollow",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Components",
+      "type": null,
+      "children": [
+        {
+          "id": "13",
+          "name": "Bouncer",
+          "type": null,
+          "children": [
+            {
+              "id": "11",
+              "name": "BouncerSprite",
+              "type": "sprite"
+            },
+            {
+              "id": "12",
+              "name": "BouncerComponent",
+              "type": "script"
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "name": "Lock",
+          "type": null,
+          "children": [
+            {
+              "id": "15",
+              "name": "LockSprite",
+              "type": "sprite"
+            },
+            {
+              "id": "16",
+              "name": "LockComponent",
+              "type": "script"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

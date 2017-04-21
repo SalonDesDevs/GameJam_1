@@ -1,0 +1,56 @@
+{
+  "behaviors": {
+    "PlayerBehavior": {
+      "scriptId": "6",
+      "line": 4,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        },
+        {
+          "name": "jumpSpeed",
+          "type": "number"
+        }
+      ]
+    },
+    "CameraFollowBehavior": {
+      "scriptId": "7",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "player",
+          "type": "any"
+        }
+      ]
+    },
+    "BouncerComponentBehavior": {
+      "scriptId": "12",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "force",
+          "type": "number"
+        }
+      ]
+    },
+    "LockComponentBehavior": {
+      "scriptId": "16",
+      "line": 2,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "oldX",
+          "type": "number"
+        },
+        {
+          "name": "oldY",
+          "type": "number"
+        }
+      ]
+    }
+  }
+}
