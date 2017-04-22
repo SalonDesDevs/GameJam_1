@@ -1,16 +1,25 @@
-class BouncerComponentBehavior extends Sup.Behavior {
-  force = 0.65;
+class BouncerComponentBehavior extends Sup.Behavior
+{
+  force = 0.45;
   player: Sup.Actor;
   
-  awake() {
+  awake()
+  {
     this.player = Sup.getActor("Player");  
   }
 
-  update() {
+  update()
+  {
     if (Sup.ArcadePhysics2D.collides(this.player.arcadeBody2D, this.actor.arcadeBody2D)) {
       let or: Sup.Math.Quaternion = this.actor.getOrientation();
       
+      Sup.log(or);
+      
       if (or.z < -0.6 && or.z > -0.8 && or.w > 0.6 && or.w < 0.8)
+      {
+          this.player.arcadeBody2D.setVelocityX(this.force * 6);
+      }
+      else if (or.z > 0.6 && or.z > -0.8 && or.w > 0.6 && or.w < 0.8)
       {
           this.player.arcadeBody2D.setVelocityX(this.force * 6);
       }
@@ -21,4 +30,5 @@ class BouncerComponentBehavior extends Sup.Behavior {
     }
   }
 }
+
 Sup.registerBehavior(BouncerComponentBehavior);

@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 17,
+  "nextEntryId": 22,
   "nodes": [
     {
       "id": "1",
@@ -7,15 +7,22 @@
       "type": "tileSet"
     },
     {
-      "id": "8",
-      "name": "Levels",
+      "id": "17",
+      "name": "Views",
       "type": null,
       "children": [
         {
           "id": "0",
           "name": "Level 1",
           "type": "scene"
-        },
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Levels",
+      "type": null,
+      "children": [
         {
           "id": "2",
           "name": "Level 1 Map",
@@ -29,14 +36,14 @@
       "type": null,
       "children": [
         {
-          "id": "5",
-          "name": "Sprite",
-          "type": "sprite"
-        },
-        {
           "id": "6",
           "name": "Player",
           "type": "script"
+        },
+        {
+          "id": "5",
+          "name": "PlayerSprite",
+          "type": "sprite"
         }
       ]
     },
@@ -48,6 +55,11 @@
         {
           "id": "7",
           "name": "CameraFollow",
+          "type": "script"
+        },
+        {
+          "id": "21",
+          "name": "Restarter",
           "type": "script"
         }
       ]
@@ -87,6 +99,23 @@
             {
               "id": "16",
               "name": "LockComponent",
+              "type": "script"
+            }
+          ]
+        },
+        {
+          "id": "18",
+          "name": "Spike",
+          "type": null,
+          "children": [
+            {
+              "id": "19",
+              "name": "SpikeSprite",
+              "type": "sprite"
+            },
+            {
+              "id": "20",
+              "name": "SpikeComponent",
               "type": "script"
             }
           ]

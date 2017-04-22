@@ -2,14 +2,17 @@ const GRAVITY = 0.015;
 
 Sup.ArcadePhysics2D.setGravity(0, -GRAVITY);
 
-class PlayerBehavior extends Sup.Behavior {
+class PlayerBehavior extends Sup.Behavior
+{
   speed = 0.035;
-  jumpSpeed = 0.35;
+  jumpSpeed = 0.3;
   
-  awake() {
+  awake()
+  {
   }
 
-  update() {
+  update()
+  {
     Sup.ArcadePhysics2D.collides(this.actor.arcadeBody2D, Sup.ArcadePhysics2D.getAllBodies());
     
     let velocity = this.actor.arcadeBody2D.getVelocity();
@@ -82,4 +85,5 @@ class PlayerBehavior extends Sup.Behavior {
     this.actor.arcadeBody2D.setVelocity(velocity);
   }
 }
+
 Sup.registerBehavior(PlayerBehavior);

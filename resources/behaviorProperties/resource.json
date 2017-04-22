@@ -51,6 +51,18 @@
           "type": "number"
         }
       ]
+    },
+    "SpikeComponentBehavior": {
+      "scriptId": "20",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "RestarterBehavior": {
+      "scriptId": "21",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }
