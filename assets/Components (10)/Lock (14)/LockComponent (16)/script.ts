@@ -19,15 +19,19 @@ class LockComponentBehavior extends Sup.Behavior
       this.oldX = this.player.arcadeBody2D.getVelocityX();
       this.oldY = this.player.arcadeBody2D.getVelocityY();
       
-      this.player.arcadeBody2D.setVelocity(new Sup.Math.Vector2(0, 0));
       Sup.ArcadePhysics2D.setGravity(0, 0);
       
       this.queue = KEYS.slice(0);
     }
     
-    if (this.queue !== undefined && this.queue.length != 0 && Sup.Input.isKeyDown(this.queue[0]))
+    if (this.queue !== undefined && this.queue.length != 0)
     {
-      this.queue.splice(0, 1);
+      this.player.arcadeBody2D.setVelocity(new Sup.Math.Vector2(0, 0));
+      
+      if (Sup.Input.isKeyDown(this.queue[0]))
+      {
+        this.queue.splice(0, 1);
+      }
     }
     
     if (this.queue !== undefined && this.queue.length == 0)

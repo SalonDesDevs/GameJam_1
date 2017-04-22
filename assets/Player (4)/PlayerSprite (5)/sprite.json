@@ -5,14 +5,14 @@
   ],
   "filtering": "pixelated",
   "wrapping": "clampToEdge",
-  "pixelsPerUnit": 100,
-  "framesPerSecond": 20,
+  "pixelsPerUnit": 16,
+  "framesPerSecond": 6,
   "opacity": null,
   "alphaTest": 0.1,
-  "frameOrder": "rows",
+  "frameOrder": "columns",
   "grid": {
-    "width": 64,
-    "height": 64
+    "width": 16,
+    "height": 16
   },
   "origin": {
     "x": 0.5,
@@ -20,10 +20,31 @@
   },
   "animations": [
     {
-      "id": "0",
+      "id": "3",
       "name": "Idle",
       "startFrameIndex": 0,
-      "endFrameIndex": 11,
+      "endFrameIndex": 0,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "Run",
+      "startFrameIndex": 21,
+      "endFrameIndex": 24,
+      "speed": 1
+    },
+    {
+      "id": "4",
+      "name": "Jump",
+      "startFrameIndex": 26,
+      "endFrameIndex": 26,
+      "speed": 1
+    },
+    {
+      "id": "5",
+      "name": "Fall",
+      "startFrameIndex": 25,
+      "endFrameIndex": 20,
       "speed": 1
     }
   ],

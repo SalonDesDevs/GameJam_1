@@ -2,6 +2,7 @@ class RestarterBehavior extends Sup.Behavior
 {
   player: Sup.Actor;
   spawn: Sup.Actor;
+  scene: string;
   
   awake()
   {
@@ -13,6 +14,9 @@ class RestarterBehavior extends Sup.Behavior
   {
     if (Sup.Input.wasKeyJustPressed("RETURN"))
     {
+      Sup.destroyAllActors();
+      Sup.appendScene(this.scene);
+      
       this.player.arcadeBody2D.warpPosition(this.spawn.getPosition());
     }
   }

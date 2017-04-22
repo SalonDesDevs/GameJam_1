@@ -6,7 +6,19 @@
       "parentBehavior": null,
       "properties": [
         {
+          "name": "minSpeed",
+          "type": "number"
+        },
+        {
           "name": "speed",
+          "type": "number"
+        },
+        {
+          "name": "maxSpeed",
+          "type": "number"
+        },
+        {
+          "name": "inertia",
           "type": "number"
         },
         {
@@ -56,13 +68,23 @@
       "scriptId": "20",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "scene",
+          "type": "string"
+        }
+      ]
     },
     "RestarterBehavior": {
       "scriptId": "21",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "scene",
+          "type": "string"
+        }
+      ]
     }
   }
 }

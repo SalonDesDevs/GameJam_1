@@ -4,7 +4,10 @@ Sup.ArcadePhysics2D.setGravity(0, -GRAVITY);
 
 class PlayerBehavior extends Sup.Behavior
 {
-  speed = 0.035;
+  minSpeed = 0.0125;
+  speed = 0.0325;
+  maxSpeed = 0.15;
+  inertia = 1.225;
   jumpSpeed = 0.3;
   
   awake()
@@ -29,22 +32,22 @@ class PlayerBehavior extends Sup.Behavior
     }
     else
     {
-      velocity.x /= 1.09;
+      velocity.x /= this.inertia;
     }
     
-    if (velocity.x < 0.001 && velocity.x > -0.001)
+    if (velocity.x < this.minSpeed && velocity.x > -this.minSpeed)
     {
       velocity.x = 0;
     }
     
-    if (velocity.x > 0.3)
+    if (velocity.x > this.maxSpeed)
     {
-      velocity.x = 0.3;
+      velocity.x = this.maxSpeed;
     }
     
-    if (velocity.x < -0.3)
+    if (velocity.x < -this.maxSpeed)
     {
-      velocity.x = -0.3;
+      velocity.x = -this.maxSpeed;
     }
 
     let touchBottom = this.actor.arcadeBody2D.getTouches().bottom;
@@ -54,7 +57,7 @@ class PlayerBehavior extends Sup.Behavior
       if (Sup.Input.wasKeyJustPressed("UP"))
       {
         velocity.y = this.jumpSpeed;
-        //this.actor.spriteRenderer.setAnimation("Jump");
+        this.actor.spriteRenderer.setAnimation("Jump");
       }
       else
       {
@@ -64,7 +67,7 @@ class PlayerBehavior extends Sup.Behavior
         }
         else
         {
-          //this.actor.spriteRenderer.setAnimation("Run");
+          this.actor.spriteRenderer.setAnimation("Run");
         }
       }
       
@@ -74,11 +77,11 @@ class PlayerBehavior extends Sup.Behavior
     {
       if (velocity.y >= 0)
       {
-        //this.actor.spriteRenderer.setAnimation("Jump");
+        this.actor.spriteRenderer.setAnimation("Jump");
       }
       else
       {
-        //this.actor.spriteRenderer.setAnimation("Fall");
+        this.actor.spriteRenderer.setAnimation("Fall");
       }
     }
 

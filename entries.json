@@ -1,9 +1,14 @@
 {
-  "nextEntryId": 22,
+  "nextEntryId": 25,
   "nodes": [
     {
       "id": "1",
-      "name": "Main blocks",
+      "name": "Debug blocks",
+      "type": "tileSet"
+    },
+    {
+      "id": "22",
+      "name": "Ninja Adventure blocks",
       "type": "tileSet"
     },
     {
@@ -13,6 +18,11 @@
       "children": [
         {
           "id": "0",
+          "name": "Test Level",
+          "type": "scene"
+        },
+        {
+          "id": "24",
           "name": "Level 1",
           "type": "scene"
         }
@@ -25,6 +35,11 @@
       "children": [
         {
           "id": "2",
+          "name": "Test Map",
+          "type": "tileMap"
+        },
+        {
+          "id": "23",
           "name": "Level 1 Map",
           "type": "tileMap"
         }
