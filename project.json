@@ -1,0 +1,147 @@
+{
+  "name": "Nermster",
+  "assets": [
+    {
+      "id": "22",
+      "name": "Blocks",
+      "type": "tileSet"
+    },
+    {
+      "id": "26",
+      "name": "Main Font",
+      "type": "font"
+    },
+    {
+      "id": "17",
+      "name": "Views",
+      "type": null,
+      "children": [
+        {
+          "id": "38",
+          "name": "Splash",
+          "type": "scene"
+        },
+        {
+          "id": "41",
+          "name": "Rules",
+          "type": "scene"
+        },
+        {
+          "id": "35",
+          "name": "Level 1",
+          "type": "scene"
+        },
+        {
+          "id": "24",
+          "name": "Level 3",
+          "type": "scene"
+        },
+        {
+          "id": "42",
+          "name": "End",
+          "type": "scene"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "name": "GUI Assets",
+      "type": null,
+      "children": [
+        {
+          "id": "37",
+          "name": "Splash background",
+          "type": "tileMap"
+        },
+        {
+          "id": "40",
+          "name": "Hider",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Levels",
+      "type": null,
+      "children": [
+        {
+          "id": "33",
+          "name": "Level 1",
+          "type": "tileMap"
+        },
+        {
+          "id": "23",
+          "name": "Level 3 Map",
+          "type": "tileMap"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Player",
+      "type": null,
+      "children": [
+        {
+          "id": "6",
+          "name": "Player",
+          "type": "script"
+        },
+        {
+          "id": "5",
+          "name": "PlayerSprite",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Scripts",
+      "type": null,
+      "children": [
+        {
+          "id": "7",
+          "name": "CameraFollow",
+          "type": "script"
+        },
+        {
+          "id": "21",
+          "name": "Restarter",
+          "type": "script"
+        },
+        {
+          "id": "27",
+          "name": "Timer",
+          "type": "script"
+        },
+        {
+          "id": "39",
+          "name": "Splash",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Components",
+      "type": null,
+      "children": [
+        {
+          "id": "12",
+          "name": "BouncerComponent",
+          "type": "script"
+        },
+        {
+          "id": "20",
+          "name": "SpikeComponent",
+          "type": "script"
+        },
+        {
+          "id": "16",
+          "name": "LockComponent",
+          "type": "script"
+        }
+      ]
+    }
+  ]
+}
