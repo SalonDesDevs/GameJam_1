@@ -15,7 +15,13 @@ class CameraFollowBehavior extends Sup.Behavior
     //this.actor.setY(this.player.getY());
     this.actor.setPosition(this.player.getX(), this.player.getY(), this.actor.getZ());
     this.timer.setPosition(this.actor.getX(), this.actor.getY() + 5);
-    Sup.log(this.timer.getPosition());
+    
+    let end = Sup.getActor("EndGUI");
+    
+    if (end != null)
+    {
+      end.setPosition(this.player.getX(), this.player.getY());
+    }
   }
 }
 

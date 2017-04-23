@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 28,
+  "nextEntryId": 43,
   "nodes": [
     {
       "id": "22",
@@ -17,9 +17,46 @@
       "type": null,
       "children": [
         {
+          "id": "38",
+          "name": "Splash",
+          "type": "scene"
+        },
+        {
+          "id": "41",
+          "name": "Rules",
+          "type": "scene"
+        },
+        {
+          "id": "35",
+          "name": "Level 1",
+          "type": "scene"
+        },
+        {
           "id": "24",
           "name": "Level 3",
           "type": "scene"
+        },
+        {
+          "id": "42",
+          "name": "End",
+          "type": "scene"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "name": "GUI Assets",
+      "type": null,
+      "children": [
+        {
+          "id": "37",
+          "name": "Splash background",
+          "type": "tileMap"
+        },
+        {
+          "id": "40",
+          "name": "Hider",
+          "type": "sprite"
         }
       ]
     },
@@ -28,6 +65,11 @@
       "name": "Levels",
       "type": null,
       "children": [
+        {
+          "id": "33",
+          "name": "Level 1",
+          "type": "tileMap"
+        },
         {
           "id": "23",
           "name": "Level 3 Map",
@@ -71,6 +113,11 @@
           "id": "27",
           "name": "Timer",
           "type": "script"
+        },
+        {
+          "id": "39",
+          "name": "Splash",
+          "type": "script"
         }
       ]
     },
@@ -80,55 +127,19 @@
       "type": null,
       "children": [
         {
-          "id": "13",
-          "name": "Bouncer",
-          "type": null,
-          "children": [
-            {
-              "id": "11",
-              "name": "BouncerSprite",
-              "type": "sprite"
-            },
-            {
-              "id": "12",
-              "name": "BouncerComponent",
-              "type": "script"
-            }
-          ]
+          "id": "12",
+          "name": "BouncerComponent",
+          "type": "script"
         },
         {
-          "id": "14",
-          "name": "Lock",
-          "type": null,
-          "children": [
-            {
-              "id": "15",
-              "name": "LockSprite",
-              "type": "sprite"
-            },
-            {
-              "id": "16",
-              "name": "LockComponent",
-              "type": "script"
-            }
-          ]
+          "id": "20",
+          "name": "SpikeComponent",
+          "type": "script"
         },
         {
-          "id": "18",
-          "name": "Spike",
-          "type": null,
-          "children": [
-            {
-              "id": "19",
-              "name": "SpikeSprite",
-              "type": "sprite"
-            },
-            {
-              "id": "20",
-              "name": "SpikeComponent",
-              "type": "script"
-            }
-          ]
+          "id": "16",
+          "name": "LockComponent",
+          "type": "script"
         }
       ]
     }

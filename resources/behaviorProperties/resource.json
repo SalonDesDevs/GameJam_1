@@ -83,7 +83,7 @@
     },
     "TimerBehavior": {
       "scriptId": "27",
-      "line": 4,
+      "line": 5,
       "parentBehavior": null,
       "properties": [
         {
@@ -97,6 +97,21 @@
         {
           "name": "goldCS",
           "type": "number"
+        },
+        {
+          "name": "next",
+          "type": "string"
+        }
+      ]
+    },
+    "SplashBehavior": {
+      "scriptId": "39",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "next",
+          "type": "string"
         }
       ]
     }

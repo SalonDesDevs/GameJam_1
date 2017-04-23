@@ -7,26 +7,18 @@
   "wrapping": "clampToEdge",
   "pixelsPerUnit": 100,
   "framesPerSecond": 10,
-  "opacity": null,
+  "opacity": 1,
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
-    "width": 64,
-    "height": 128
+    "width": 1920,
+    "height": 1080
   },
   "origin": {
     "x": 0.5,
     "y": 0.5
   },
-  "animations": [
-    {
-      "id": "0",
-      "name": "Idle",
-      "startFrameIndex": 0,
-      "endFrameIndex": 0,
-      "speed": 1
-    }
-  ],
+  "animations": [],
   "mapSlots": {
     "map": "map",
     "light": null,
