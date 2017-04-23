@@ -241,7 +241,7 @@
             "propertyValues": {
               "next": {
                 "type": "string",
-                "value": "Views/Rules"
+                "value": "Views/Splash"
               }
             }
           },

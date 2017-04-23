@@ -183,7 +183,7 @@
           "config": {
             "formatVersion": 2,
             "fontAssetId": "26",
-            "text": "Le but du jeu est de finir\nle niveau le plus rapidement\npossible.\n\nUn timer mesurera votre\ntemps, et sera de la couleur\nde votre medaille (or,\nargent, bronze, ou rien).\n\nLa statue correspond a la\nfin du niveau.\n\nLes petits trucs bleus sont\ndes ressorts.\n\nUtilisez les flèches\ndirectionneles pour\nbouger, et EMTER pour\nrecommencer",
+            "text": "Le but du jeu est de finir\nle niveau le plus rapidement\npossible.\n\nUn timer mesurera votre\ntemps, et sera de la couleur\nde votre medaille (or,\nargent, bronze, ou rien).\n\nLa statue correspond a la\nfin du niveau.\n\nLes petits trucs bleus sont\ndes ressorts.\n\nUtilisez les fleches\ndirectionneles pour\nbouger, et EMTER pour\nrecommencer",
             "alignment": "center",
             "verticalAlignment": "top",
             "size": null,
