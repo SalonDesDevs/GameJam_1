@@ -31,12 +31,7 @@
       "scriptId": "7",
       "line": 0,
       "parentBehavior": null,
-      "properties": [
-        {
-          "name": "player",
-          "type": "any"
-        }
-      ]
+      "properties": []
     },
     "BouncerComponentBehavior": {
       "scriptId": "12",
@@ -83,6 +78,25 @@
         {
           "name": "scene",
           "type": "string"
+        }
+      ]
+    },
+    "TimerBehavior": {
+      "scriptId": "27",
+      "line": 4,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "goldM",
+          "type": "number"
+        },
+        {
+          "name": "goldS",
+          "type": "number"
+        },
+        {
+          "name": "goldCS",
+          "type": "number"
         }
       ]
     }

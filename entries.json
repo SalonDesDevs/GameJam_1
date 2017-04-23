@@ -1,15 +1,15 @@
 {
-  "nextEntryId": 25,
+  "nextEntryId": 28,
   "nodes": [
     {
-      "id": "1",
-      "name": "Debug blocks",
+      "id": "22",
+      "name": "Blocks",
       "type": "tileSet"
     },
     {
-      "id": "22",
-      "name": "Ninja Adventure blocks",
-      "type": "tileSet"
+      "id": "26",
+      "name": "Main Font",
+      "type": "font"
     },
     {
       "id": "17",
@@ -17,13 +17,8 @@
       "type": null,
       "children": [
         {
-          "id": "0",
-          "name": "Test Level",
-          "type": "scene"
-        },
-        {
           "id": "24",
-          "name": "Level 1",
+          "name": "Level 3",
           "type": "scene"
         }
       ]
@@ -34,13 +29,8 @@
       "type": null,
       "children": [
         {
-          "id": "2",
-          "name": "Test Map",
-          "type": "tileMap"
-        },
-        {
           "id": "23",
-          "name": "Level 1 Map",
+          "name": "Level 3 Map",
           "type": "tileMap"
         }
       ]
@@ -75,6 +65,11 @@
         {
           "id": "21",
           "name": "Restarter",
+          "type": "script"
+        },
+        {
+          "id": "27",
+          "name": "Timer",
           "type": "script"
         }
       ]

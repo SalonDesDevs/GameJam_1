@@ -1,6 +1,6 @@
 class BouncerComponentBehavior extends Sup.Behavior
 {
-  force = 0.45;
+  force = 0.40;
   player: Sup.Actor;
   
   awake()
